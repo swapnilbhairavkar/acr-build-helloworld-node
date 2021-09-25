@@ -11,6 +11,8 @@ spec:
       labels:
         app: githubactionscontainer
     spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
       containers:
         - image: #{acrimageurl}#
           name: githubactionscontainer
